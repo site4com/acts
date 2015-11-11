@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.1" method="upgrade">
+	<name>com_edashboard</name>
+	<author>Cuong Nguyen</author>
+	<creationDate>2015-09-25</creationDate>
+	<copyright>(C) 2014-2015. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later; see	LICENSE.txt</license>
+	<authorEmail>cuongnm1020@gmail.com</authorEmail>
+	<authorUrl></authorUrl>
+	<version>0.1.3</version>
+	<description>COM_EDASHBOARD_XML_DESCRIPTION</description>
+
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+
+	<!-- Front end -->
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>edashboard.php</filename>
+		<folder>controllers</folder>
+		<folder>helpers</folder>		
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+
+	<administration>
+		<menu img="class:edashboard">com_edashboard</menu>
+		<submenu>
+			<menu link="option=com_categories&amp;extension=com_edashboard"
+				view="categories" img="class:edashboard-cat" alt="Edashboard/Categorie">com_edashboard_categorie</menu>
+		</submenu>
+		<files folder="admin">
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>edashboard.php</filename>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>sql</folder>
+			<folder>models</folder>
+            <folder>language</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<folder>assets</folder>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">en-GB/en-GB.com_edashboard.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_edashboard.sys.ini</language>
+
+			<language tag="it-IT">it-IT/it-IT.com_edashboard.ini</language>
+			<language tag="it-IT">it-IT/it-IT.com_edashboard.sys.ini</language>
+		</languages>
+	</administration>
+</extension>

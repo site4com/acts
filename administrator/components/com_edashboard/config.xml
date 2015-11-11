@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+
+<fieldset
+		name="edashboard"
+		label="COM_EDASHBOARD_FIELD_CONFIG_ACT_SETTINGS_LABEL"
+		description="COM_EDASHBOARD_FIELD_CONFIG_ACT_SETTINGS_DESC">
+
+		<field
+			name="edashboard_layout" type="componentlayout"
+			label="JGLOBAL_FIELD_LAYOUT_LABEL"
+			description="JGLOBAL_FIELD_LAYOUT_DESC"
+			menuitems="true"
+			extension="com_edashboard"
+			view="edashboard">
+		</field>
+
+		<field
+			id="show_item_description"
+			name="show_item_description"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			default="1"
+			label="COM_EDASHBOARD_FIELD_SHOW_ITEM_DESCRIPTION_LABEL"
+			description="COM_EDASHBOARD_FIELD_SHOW_ITEM_DESCRIPTION_DESC">
+			<option value="1">JSHOW</option>
+			<option value="0">JHIDE</option>
+		</field>
+
+		<field
+			id="show_tags"
+			name="show_tags"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			default="1"
+			label="COM_EDASHBOARD_FIELD_SHOW_TAGS_LABEL"
+			description="COM_EDASHBOARD_FIELD_SHOW_TAGS_DESC">
+			<option value="1">JSHOW</option>
+			<option value="0">JHIDE</option>
+		</field>
+
+	</fieldset>
+
+	<fieldset
+		name="category"
+		label="JCATEGORY"
+		description="COM_EDASHBOARD_FIELD_CONFIG_CATEGORY_SETTINGS_DESC">
+
+		<field
+			name="category_layout" type="componentlayout"
+			label="JGLOBAL_FIELD_LAYOUT_LABEL"
+			description="JGLOBAL_FIELD_LAYOUT_DESC"
+			menuitems="true"
+			extension="com_edashboard"
+			view="category">
+		</field>
+
+		<field name="show_category_title" type="radio"
+			class="btn-group btn-group-yesno"
+			label="JGLOBAL_SHOW_CATEGORY_TITLE"
+			description="JGLOBAL_SHOW_CATEGORY_TITLE_DESC"
+			default="1">
+			<option value="1">JSHOW</option>
+			<option value="0">JHIDE</option>
+		</field>
+
+		<field
+			id="show_description"
+			name="show_description"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			default="1"
+			label="JGLOBAL_SHOW_CATEGORY_DESCRIPTION_LABEL"
+			description="JGLOBAL_SHOW_CATEGORY_DESCRIPTION_DESC">
+			<option value="1">JSHOW</option>
+			<option value="0">JHIDE</option>
+		</field>
+
+        <field
+            id="show_document_date"
+            name="show_document_date"
+            type="radio"
+            class="btn-group btn-group-yesno"
+            default="1"
+            label="COM_EDASHBOARD_FIELD_SHOW_DOCUMENT_DATE_LABEL"
+            description="COM_EDASHBOARD_FIELD_SHOW_DOCUMENT_DATE_DESC">
+            <option value="1">JSHOW</option>
+            <option value="0">JHIDE</option>
+        </field>
+
+		<field
+			name="show_description_image"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			default="1"
+			label="JGLOBAL_SHOW_CATEGORY_IMAGE_LABEL"
+			description="JGLOBAL_SHOW_CATEGORY_IMAGE_DESC">
+	 		<option value="0">JHIDE</option>
+	 		<option value="1">JSHOW</option>
+	 	</field>
+
+		<field name="show_cat_tags" type="radio"
+			label="COM_EDASHBOARD_FIELD_SHOW_CAT_TAGS_LABEL"
+			description="COM_EDASHBOARD_FIELD_SHOW_CAT_TAGS_DESC"
+			class="btn-group btn-group-yesno"
+			default="1">
+			<option value="1">JSHOW</option>
+			<option value="0">JHIDE</option>
+		</field>
+
+	</fieldset>
+
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC">
+
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			filter="rules"
+			validate="rules"
+			component="com_edashboard"
+			section="component">
+		</field>
+
+	</fieldset>
+
+</config>
