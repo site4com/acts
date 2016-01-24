@@ -9,7 +9,7 @@ jimport('joomla.application.component.controller');
 //JLoader::register('EdashboardHelperRoute', JPATH_COMPONENT_SITE . '/helpers/route.php');
 
 // Get the appropriate controller
-$controller = JSNBaseController::getInstance('Edashboard');
+$controller = JControllerLegacy::getInstance('Edashboard');
 
 // Perform the request task
 $controller->execute(JFactory::getApplication()->input->get('task'));

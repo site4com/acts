@@ -24,8 +24,11 @@ defined('_JEXEC') or die('Restricted access');
 						{
 				?>
 					<div class="edashboard-item">
-						<div class="edashboard-title"><h2><a href="<?php echo 'index.php?option=com_edashboard&view=edashboard&show_title=1&edashboard_id=' . $edashboards->id; ?>"><?php echo $edashboards->name; ?></a></h2></div>
-						
+						<div class="edashboard-title">
+							<h2>
+								<a href="<?php echo 'index.php?option=com_edashboard&view=edashboard&show_title=1&edashboard_id=' . $edashboards->id; ?>"><?php echo $edashboards->name; ?></a>
+							</h2>
+						</div>						
 					</div>
 				<?php			
 						}	
